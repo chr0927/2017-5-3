@@ -1,0 +1,220 @@
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,p,ul,li{margin:0;padding:0;}
+body{font-size:16px;font-family:"微软雅黑";width:100%;height:100%}
+ol,ul,li{list-style:none;}
+a{text-decoration:none;display: block;text-align: center;}
+span{display: block;}
+img{border:0;display: block;}
+.clear:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+#box{
+	height:660px;
+}
+.header{
+	width:100%;
+	height:160px;
+}
+.headerFrom{
+	width:180px;
+	height:180px;
+	margin:20px 30px 0px 80px;
+	box-shadow: 0 0 15px purple;
+	border-radius: 50%;
+	float:left;
+	cursor: pointer;
+}
+.headerFrom .fromOne{
+    font-size: 42px;
+    font-weight: 600;
+    color: #666;
+    text-shadow: 2px 2px 0 pink, 4px 4px 0 #000;
+    text-align: center;
+    padding:30px;
+    cursor: pointer;
+}
+.headerJs,.headerCss,.headerHobby,.headerTour,.headerAlbum,.headerAbout{
+	width:120px;
+	height:120px;
+	font-size: 26px;
+	float:left;
+	margin:40px 30px 0px 0px;
+	border-radius: 50%;
+	color:#fff;
+	line-height:120px;
+	position: relative;
+	cursor: pointer;
+}
+.headerJs{
+	background:#e74c3c;
+}
+.headerCss{
+	background:#f39c12;
+}
+.headerHobby{
+	background:#1abc9c;
+}
+.headerTour{
+	background:#3498db;
+}
+.headerAlbum{
+	background:#8e44ad;
+}
+.headerAbout{
+	background:#2c3e50;
+}
+.arc{
+	width:105px;
+	height:105px;
+	border-radius:50%;
+	position:absolute;
+	top:4px;
+	left:4px;
+	transform: rotate(-45deg);
+	border: 4px solid transparent;
+    border-top: 4px solid #fff;
+    transition: 0.5s;
+}
+.arc:hover{
+	transform: rotate(135deg);
+}
+#box .content{
+	width:1020px;
+	height:500px;
+	margin:42px auto 0;
+}
+.content .txt{
+	width:680px;
+	height:130px;
+	font-size:15px;
+	text-align: right;
+	padding:20px 0px 20px 0px;
+	line-height:34px;
+	color:#333;
+	float: left;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+.content .txt .txtOne{
+	font-size: 28px;
+    font-weight: bolder;
+    color:#666;
+}
+.content .homepage,.content .icon,.content .sleep,.content .message,.content .resume,.content .download{
+	width:170px;
+	height:110px;
+	color:#fff;
+	font-size:20px;
+	padding-top:60px;
+	font-weight: bold;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+.content .photo{
+	width:170px;
+	height:170px;
+	float: left;
+}
+.content .photo img{
+	width:100%;
+	height:100%;
+}
+.content .icon{
+	background:#1abc9c;
+	font-size:16px;
+}
+.content .sleep{
+	background:#f5b043;
+}
+.content .message{
+	background:#8e44ad;
+	font-size:18px;
+}
+.content .resume{
+	background:#3498db;
+	height:90px;
+	padding-top:80px;
+}
+.content .download{
+	background:#2c3e50;
+	font-size:18px;
+}
+.content .blank{
+	width:170px;
+	height:170px;
+	background:#fff;
+	float: left;
+}
+.content .hide1,.content .hide2,.content .hide3,.content .hide4,.content .hide5,.content .hide6{
+	width:170px;
+	height:170px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.homepage{
+	background: #e74c3c;
+}
+.homepage span,.content .icon span,.sleep span,.message span,.resume span,.download span{
+	transition: 0.5s;
+}
+.homepage .hide1{
+	opacity: 0;
+	background: url(../img/homepage/lab1.png) center center no-repeat;
+}
+.homepage:hover span:nth-child(1){
+	opacity: 0;
+	transform: rotate(360deg);
+}
+.homepage:hover span:nth-child(2){
+	opacity: 1;
+	transform: rotate(360deg);
+}
+.content .icon .hide2{
+	transform-origin: left center;
+	transform: rotateY(90deg);
+	background: #28e1bd url(../img/homepage/lab3.png) center center no-repeat;
+}
+.icon:hover span:nth-child(2){
+	transform: rotateY(0deg);
+}
+.content .sleep .hide3{
+	transform-origin: right center;
+	transform: rotateY(-90deg);
+	background: #f39c12 url(../img/homepage/lab2.png) center center no-repeat;
+}
+.sleep:hover span:nth-child(2){
+	transform: rotateY(0deg);
+}
+.message .hide4{
+	opacity: 0;
+	transform-origin: center center;
+	background: url(../img/homepage/lab4.png) center center no-repeat;
+}
+.message:hover span:nth-child(1){
+	opacity: 0;
+	transform: scale(0);
+}
+.message:hover span:nth-child(2){
+	opacity: 1;
+	transform: scale(1);
+}
+.resume .hide5{
+	opacity: 0;
+	transform-origin: center center;
+	background: url(../img/homepage/lab5.png) center center no-repeat;
+}
+.resume:hover span:nth-child(1){
+	opacity: 0;
+	transform: rotateY(180deg);
+}
+.resume:hover span:nth-child(2){
+	opacity: 1;
+	transform: rotateY(180deg);
+}
+.download .hide6{
+	transform-origin: top center;
+	transform: rotateX(-90deg);
+	background: #3e5771 url(../img/homepage/lab6.png) center center no-repeat;
+}
+.download:hover span:nth-child(2){
+	transform: rotateX(0deg);
+}
